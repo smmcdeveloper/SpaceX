@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h9W-Hf-1Iw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launches-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchesViewController" customModule="Launches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="the-gl-4N2">
+                                <rect key="frame" x="20" y="88" width="374" height="786"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="launch" rowHeight="96" id="dd9-FC-USk" customClass="LaunchesTableViewCell" customModule="Launches" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dd9-FC-USk" id="jyA-eB-3KA">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" " translatesAutoresizingMaskIntoConstraints="NO" id="lOk-dj-hcM">
+                                                    <rect key="frame" x="20" y="18" width="62" height="59.5"/>
+                                                    <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJo-1o-xc4">
+                                                    <rect key="frame" x="90" y="40" width="264" height="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Sucess:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Deb-Xj-llB">
+                                                    <rect key="frame" x="90" y="54" width="129" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ng0-mA-mxP">
+                                                    <rect key="frame" x="227" y="56.5" width="21" height="24"/>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="21" id="Fln-Gi-V65"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falcon 9 Test " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFQ-U4-e1R">
+                                                    <rect key="frame" x="90" y="23" width="264" height="15"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xFQ-U4-e1R" firstAttribute="trailing" secondItem="jyA-eB-3KA" secondAttribute="trailingMargin" id="0sW-56-ZuE"/>
+                                                <constraint firstItem="YJo-1o-xc4" firstAttribute="top" secondItem="xFQ-U4-e1R" secondAttribute="bottom" constant="2" id="6fW-p6-hZH"/>
+                                                <constraint firstItem="xFQ-U4-e1R" firstAttribute="leading" secondItem="YJo-1o-xc4" secondAttribute="leading" id="7Py-8W-isk"/>
+                                                <constraint firstItem="YJo-1o-xc4" firstAttribute="leading" secondItem="Deb-Xj-llB" secondAttribute="leading" id="7i1-FV-Rvb"/>
+                                                <constraint firstItem="Deb-Xj-llB" firstAttribute="top" secondItem="YJo-1o-xc4" secondAttribute="bottom" id="FUp-Po-eFU"/>
+                                                <constraint firstItem="ng0-mA-mxP" firstAttribute="leading" secondItem="Deb-Xj-llB" secondAttribute="trailing" constant="8" symbolic="YES" id="FlR-FV-QHx"/>
+                                                <constraint firstItem="lOk-dj-hcM" firstAttribute="leading" secondItem="jyA-eB-3KA" secondAttribute="leadingMargin" id="R4g-1J-ZAQ"/>
+                                                <constraint firstItem="ng0-mA-mxP" firstAttribute="top" secondItem="YJo-1o-xc4" secondAttribute="bottom" constant="2" id="Uef-1A-e0T"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ng0-mA-mxP" secondAttribute="bottom" constant="4" id="oXB-y7-PhR"/>
+                                                <constraint firstItem="lOk-dj-hcM" firstAttribute="firstBaseline" secondItem="Deb-Xj-llB" secondAttribute="firstBaseline" constant="-47.5" id="qNL-6a-afg"/>
+                                                <constraint firstItem="xFQ-U4-e1R" firstAttribute="trailing" secondItem="YJo-1o-xc4" secondAttribute="trailing" id="rRB-EY-pre"/>
+                                                <constraint firstItem="xFQ-U4-e1R" firstAttribute="leading" secondItem="lOk-dj-hcM" secondAttribute="trailing" constant="8" symbolic="YES" id="vno-cM-t1h"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lOk-dj-hcM" secondAttribute="bottom" constant="7.5" id="yRB-Mi-nPZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="launchDateLabel" destination="YJo-1o-xc4" id="7DS-6S-AH7"/>
+                                            <outlet property="launchMissionImage" destination="lOk-dj-hcM" id="wDD-VI-dDl"/>
+                                            <outlet property="launchMissionSucessImage" destination="ng0-mA-mxP" id="3Tr-N6-lWs"/>
+                                            <outlet property="launchNameLabel" destination="xFQ-U4-e1R" id="Eog-Ag-F9g"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="miK-a6-uy8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OPq-pZ-Jii"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="the-gl-4N2" secondAttribute="trailing" constant="20" id="53L-vd-BCq"/>
+                            <constraint firstItem="the-gl-4N2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="12" id="KJF-9l-hbA"/>
+                            <constraint firstItem="the-gl-4N2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k9U-Ab-qcn"/>
+                            <constraint firstItem="the-gl-4N2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oPC-8P-4hh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Launches" id="DKv-pd-IOB"/>
+                    <connections>
+                        <outlet property="tableView" destination="the-gl-4N2" id="puZ-je-UvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="103.79464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6BC-3P-x6y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h9W-Hf-1Iw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="21g-fO-7Pm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LyY-Xz-7pg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggB-Dd-xg0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name=" " width="128" height="128"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
