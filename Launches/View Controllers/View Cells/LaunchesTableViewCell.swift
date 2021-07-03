@@ -12,6 +12,7 @@ class LaunchesTableViewCell: UITableViewCell {
     @IBOutlet weak var launchMissionImage: UIImageView!
     @IBOutlet weak var launchNameLabel: UILabel!
     @IBOutlet weak var launchDateLabel: UILabel!
+    @IBOutlet weak var launchMissionSucessLabel: UILabel!
     @IBOutlet weak var launchMissionSucessImage: UIImageView!
     
     override func awakeFromNib() {
@@ -22,8 +23,8 @@ class LaunchesTableViewCell: UITableViewCell {
     func configureCell(launchImage imageUrl: String, launchNameLabel launchName: String, launchDate: String, isMissionSucess: Bool) {
         
         self.launchMissionImage.loadImageUsingCache(with: imageUrl)
-        self.launchNameLabel.text = launchName
-        self.launchDateLabel.text = launchDate
+        self.launchNameLabel.text? = launchName
+        self.launchDateLabel.text? = "Launch Date: "+launchDate
         setOn(isMissionSucess)
    }
     
@@ -34,9 +35,11 @@ class LaunchesTableViewCell: UITableViewCell {
         if isOn {
             launchMissionSucessImage.image = checkedImage
             launchMissionSucessImage.tintColor = .systemGreen
+            launchMissionSucessLabel.text = "Mission Sucessful"
         } else {
             launchMissionSucessImage.image = uncheckedImage
             launchMissionSucessImage.tintColor = .systemRed
+            launchMissionSucessLabel.text = "Mission Unsucessful"
         }
     }
 }
