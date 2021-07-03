@@ -4,5 +4,5 @@
 * Open the `.xcodeproj` file
 * Run the application (`CMD + R`) on your chosen simluator 
  
-![alt text](Screenshots/Launches.png "Details")
+![alt text](Launches.png)
 
