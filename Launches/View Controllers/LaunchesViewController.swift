@@ -49,12 +49,12 @@ extension LaunchesViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "launch", for: indexPath) as? LaunchesTableViewCell else { fatalError() }
         
         let cellData = launchesViewModel.launches[indexPath.row]
-        cell.configureCell(launchImage: cellData.links.mission_patch_small ?? "",
-                           launchNameLabel: cellData.mission_name,
-                           launchDate: cellData.launchDateformatted ?? "",//launch_date_utc,
-                           isMissionSucess: cellData.land_success ?? false)
+        
+        cell.configureCell(launchImage: cellData.links?.patch?.small ?? "",
+                           launchNameLabel: cellData.name ?? "",
+                           launchDate: cellData.launchDateformatted,
+                           isMissionSucess: cellData.success ?? false)
         
         return cell
     }
 }
-
