@@ -7,5 +7,5 @@
 
 import Foundation
 
-let baseUrl : String = "https://api.spacexdata.com/v2/"
-let breachesExtensionURL : String = "launches/all"
+let baseUrl : String = "https://api.spacexdata.com/v4/"
+let breachesExtensionURL : String = "launches"

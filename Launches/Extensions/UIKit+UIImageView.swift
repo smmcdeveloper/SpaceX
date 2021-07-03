@@ -7,7 +7,7 @@
 
 import UIKit
 
-fileprivate var imageCache = [String : UIImage]()
+fileprivate var imageCache = [String? : UIImage]()
 
 extension UIImageView {
     func loadImageUsingCache(with urlString: String) {
